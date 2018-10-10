@@ -20,6 +20,7 @@ gem "audited", "~> 4.7"
 gem 'tinymce-rails'
 gem 'rubocop', require: false
 gem "rails_best_practices"
+gem 'rename'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use postgresql as the database for Active Record
@@ -76,6 +77,9 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+
+  gem 'shoulda-matchers', '4.0.0.rc1'
+  gem 'rails-controller-testing' # If you are using Rails 5.x
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
